@@ -806,3 +806,61 @@ Processing by ArticlesController#index as TURBO_STREAM
 Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 2367)
 
 
+Started GET "/movies/new" for ::1 at 2025-02-03 03:27:51 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 23.5ms | Allocations: 2553)
+  Rendered layout layouts/application.html.erb (Duration: 185.1ms | Allocations: 81742)
+Completed 200 OK in 240ms (Views: 195.7ms | ActiveRecord: 0.0ms | Allocations: 90230)
+
+
+Started GET "/movies/new" for ::1 at 2025-02-03 03:28:39 +0000
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 998)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2565)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3545)
+
+
+Started GET "/movies/new" for ::1 at 2025-02-03 03:29:34 +0000
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 736)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2064)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 2317)
+
+
+Started GET "/movies/new" for ::1 at 2025-02-03 03:29:35 +0000
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 737)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2065)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2317)
+
+
+Started GET "/movies/new" for ::1 at 2025-02-03 03:29:43 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2059)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 34426)
+Completed 200 OK in 38ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 40482)
+
+
+Started GET "/" for ::1 at 2025-02-03 03:29:46 +0000
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 16435)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 17963)
+Completed 200 OK in 19ms (Views: 11.9ms | ActiveRecord: 0.4ms | Allocations: 19281)
+
+
