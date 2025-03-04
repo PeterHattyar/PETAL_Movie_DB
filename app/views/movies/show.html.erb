@@ -18,4 +18,6 @@
   <%= @movie.genre %>
 </p>
 
-<%= link_to 'Back to All Films', movies_path %>
+<%= link_to 'Edit this Movie', edit_movie_path(@movie) %>
+<br>
+<%= link_to 'Back to All Movies', movies_path %>

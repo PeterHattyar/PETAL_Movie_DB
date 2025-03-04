@@ -1,32 +1,8 @@
 <h1>Add New Movie</h1>
 
-<%= form_with scope: :movie, url: movies_path, local: true do |form| %>
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-    <% @movie.errors.full_messages_for(:title).each do |message| %>
-      <div><%= message %></div>
-    <% end %>
-  </p>
- 
-  <p>
-    <%= form.label :director %><br>
-    <%= form.text_field :director %>
-  </p>
+<%= render "form", movie: @movie %>
 
-  <p>
-    <%= form.label :release_date %><br>
-    <%= form.date_field :release %>
-  </p>
+<%# This is old rails form with scope, instead of model. %>
+<%#= form_with scope: :movie, url: movies_path, local: true do |form| %>
 
-  <p>
-    <%= form.label :genre %><br>
-    <%= form.text_area :genre %>
-  </p>
- 
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
-
-<%= link_to 'Cancel', movies_path %>
+<%# All contents here are now factored out into the _forms partial. %>

@@ -19,6 +19,7 @@
       <td><%= movie.release %></td>
       <td><%= movie.genre %></td>
       <td><%= link_to 'Show', movie_path(movie) %></td>
+      <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
     </tr>
   <% end %>
 </table>
