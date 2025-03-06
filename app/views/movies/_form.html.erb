@@ -1,0 +1,33 @@
+<%# This is old rails form with scope, instead of model. %>
+<%#= form_with scope: :movie, url: movies_path, local: true do |form| %>
+
+<%= form_with model: movie do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+    <% movie.errors.full_messages_for(:title).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+ 
+  <div>
+    <%= form.label :director %><br>
+    <%= form.text_field :director %>
+  </div>
+
+  <div>
+    <%= form.label :release_date %><br>
+    <%= form.date_field :release %>
+  </div>
+
+  <div>
+    <%= form.label :genre %><br>
+    <%= form.text_area :genre %>
+  </div>
+ 
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+<br>
+<%= link_to 'Cancel', movies_path %>

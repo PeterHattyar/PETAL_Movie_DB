@@ -1,0 +1,8 @@
+<h1>Add New Movie</h1>
+
+<%= render "form", movie: @movie %>
+
+<%# This is old rails form with scope, instead of model. %>
+<%#= form_with scope: :movie, url: movies_path, local: true do |form| %>
+
+<%# All contents here are now factored out into the _forms partial. %>
