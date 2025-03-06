@@ -20,4 +20,10 @@
 
 <%= link_to 'Edit this Movie', edit_movie_path(@movie) %>
 <br>
+<%= link_to "Delete this Movie", movie_path(@movie), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
+<br>
+<br>
 <%= link_to 'Back to All Movies', movies_path %>

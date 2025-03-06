@@ -47,6 +47,13 @@ class MoviesController < ApplicationController
     end
   end
 
+  def destroy
+    @movie = Movie.find(params[:id])
+    @movie.destroy
+
+    redirect_to root_path, status: :see_other
+  end
+
   private
   def movie_params
     params.require(:movie).permit(:title, :director, :release, :genre)
