@@ -1,5 +1,10 @@
 <h1>!! Welcome To MovieLand !!</h1>
 
+<%= form_with url: movies_path, method: :get, local: true do %>
+  <label for="search">Search:</label>
+  <%= text_field_tag :search, params[:search], placeholder: "Enter keyword..." %>
+  <%= submit_tag "Search" %>
+<% end %>
 
 <h2>Now Screening:</h2>
 
